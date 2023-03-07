@@ -1,7 +1,7 @@
 #!/bin/bash
 # Modify default system settings
 
-# 修改默认IP为192.168.10.1
+# 修改默认IP为192.168.2.250
 sed -i 's/192.168.1.1/192.168.2.250/g' package/base-files/files/bin/config_generate 
 
 # Hello World
