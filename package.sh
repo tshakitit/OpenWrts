@@ -20,3 +20,6 @@ git clone https://github.com/immortalwrt/homeproxy.git package/otherapp/luci-app
 #passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/PWpackages
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+
+#store
+git clone https://github.com/linkease/istore.git package/luci-app-store
