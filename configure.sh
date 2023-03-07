@@ -14,7 +14,7 @@ echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-inf
 #echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
 #echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall2.git" >> feeds.conf.default
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/PWpackages
-curl -o https://github.com/xiaorouji/openwrt-passwall/tree/luci/luci-app-passwall package/luci-app-passwall
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 替换默认主题
 rm -rf package/lean/luci-theme-argon 
