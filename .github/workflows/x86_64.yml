@@ -64,12 +64,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$SYS_CONF_SH
 
-    - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a
-
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
-
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
@@ -77,6 +71,12 @@ jobs:
         chmod +x $PACKS
         cd openwrt
         $GITHUB_WORKSPACE/$PACKS
+
+    - name: Update feeds
+      run: cd openwrt && ./scripts/feeds update -a
+
+    - name: Install feeds
+      run: cd openwrt && ./scripts/feeds install -a
     
     - name: Modify configuration
       run: |
