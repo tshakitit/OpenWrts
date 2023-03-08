@@ -17,4 +17,4 @@ sed -i 's/192.168.1.1/192.168.2.251/g' package/base-files/files/bin/config_gener
 #git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 替换默认主题
-sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
+#sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
