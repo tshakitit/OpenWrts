@@ -15,7 +15,7 @@ git clone https://github.com/kenzok8/luci-theme-ifit.git package/otherapp/luci-t
 #git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/otherapp/mentohust
 
 # homeproxy
-git clone https://github.com/immortalwrt/homeproxy.git package/otherapp/luci-app-homeproxy
+#git clone https://github.com/immortalwrt/homeproxy.git package/otherapp/luci-app-homeproxy
 
 #passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/PWpackages
