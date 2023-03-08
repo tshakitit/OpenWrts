@@ -2,7 +2,7 @@
 # Modify default system settings
 
 # 修改默认IP为192.168.2.250
-sed -i 's/192.168.1.1/192.168.2.250/g' package/base-files/files/bin/config_generate 
+sed -i 's/192.168.1.1/192.168.2.251/g' package/base-files/files/bin/config_generate 
 
 # Hello World
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
@@ -17,5 +17,4 @@ sed -i 's/192.168.1.1/192.168.2.250/g' package/base-files/files/bin/config_gener
 #git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 替换默认主题
-#rm -rf package/lean/luci-theme-argon 
-#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/lean/luci-theme-argon
+sed -i "s/bootstrap/ifit/ig" feeds/luci/collections/luci/Makefile
