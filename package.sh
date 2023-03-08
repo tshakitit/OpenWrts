@@ -23,4 +23,4 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/pass
 
 #store
 git clone https://github.com/linkease/istore.git package/luci-app-store
-src-git compat https://github.com/jjm2473/openwrt-compat.git;21.02
+git clone https://github.com/jjm2473/openwrt-compat.git package/compat
