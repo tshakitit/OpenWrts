@@ -11,7 +11,7 @@ on:
 
 env:
   OPNAME: 'x86_64'
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/istoreos/istoreos
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: configs/x86_64_even.config
@@ -77,9 +77,6 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-
-    - name: Modify default theme
-      run: cd openwrt && sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
 
     - name: Modify configuration
       run: |
